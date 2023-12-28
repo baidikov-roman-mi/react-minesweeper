@@ -1,0 +1,40 @@
+$colors: rgba(255, 255, 255, 0.87), #646cff, #535bf2, #213547, #747bff;
+$font-families: inherit, Verdana, Arial, sans-serif;
+$background-colors: #242424, #1a1a1a, #ffffff, #f9f9f9;
+$border-color: #646cff;
+
+:root {
+  font-family: nth($font-families, 3);
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+  color: nth($colors, 1);
+  background-color: nth($background-colors, 1);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+a {
+  font-weight: 500;
+  color: nth($colors, 2);
+  text-decoration: inherit;
+  &:hover {
+    color: nth($colors, 3);
+  }
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
