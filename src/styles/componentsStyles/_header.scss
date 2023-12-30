@@ -1,0 +1,6 @@
+@use "../variables" as v;
+#header {
+  @include v.flex-between-center;
+  width: 233px;
+  height: 2rem;
+}

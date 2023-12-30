@@ -1,0 +1,37 @@
+$colors: #363636, #9d9d9d, rgb(91, 91, 91);
+
+// flex mixins
+@mixin flex-allcenter-column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+@mixin flex-allcenter-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: row;
+}
+
+@mixin flex-between-center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+// colorize mixins
+@mixin bg($color-index) {
+  background: nth($colors, $color-index);
+}
+
+@mixin color($color-index) {
+  color: nth($colors, $color-index);
+}
+
+@mixin border($wideness, $border-specification, $color-index) {
+  border: $wideness $border-specification nth($colors, $color-index);
+}

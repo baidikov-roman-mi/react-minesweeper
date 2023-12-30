@@ -1,0 +1,19 @@
+@use "../variables.scss" as v;
+
+#restartBtn {
+  width: 3.5rem;
+  height: 2.5rem;
+  @include v.flex-allcenter-column;
+  @include v.bg(1);
+  font-size: 1.2rem;
+  @include v.color(3);
+  transition: all 0.1s ease-in-out;
+  @include v.border(2px, solid, 2);
+  padding: 0;
+}
+#restartBtn {
+  width: 2.5rem;
+  &:active {
+    @include v.border(5px, solid, 1);
+  }
+}

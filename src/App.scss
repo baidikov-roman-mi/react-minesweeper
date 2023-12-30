@@ -1,6 +1,22 @@
+@use "./styles/variables.scss" as v;
+
+* {
+  box-sizing: border-box;
+}
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  @include v.flex-allcenter-column;
+  @media screen and (min-width: 320px) {
+    padding: 0.5rem;
+  }
+}
+
+#gameContainer {
+  @include v.flex-allcenter-column;
+  @include v.bg(3);
+  padding: 10px;
+  gap: 10px;
+  @include v.border(2px, solid, 2);
 }

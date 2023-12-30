@@ -1,0 +1,8 @@
+@use "../variables" as v;
+
+#gameBoard {
+  @include v.flex-allcenter-row;
+  flex-wrap: wrap;
+  width: 233px;
+  gap: 1px;
+}

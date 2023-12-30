@@ -1,0 +1,10 @@
+@use "../variables" as v;
+
+#cell {
+  width: 25px;
+  height: 25px;
+  @include v.bg(1);
+  &:active {
+    @include v.bg(3);
+  }
+}
