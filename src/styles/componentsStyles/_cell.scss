@@ -1,10 +1,16 @@
 @use "../variables" as v;
 
-#cell {
+.cell {
   width: 25px;
   height: 25px;
   @include v.bg(1);
+  @include v.flex-allcenter-column;
+  &.visible {
+    @include v.bg(3);
+    border: 1px solid nth(v.$colors, 1 );
+  }
   &:active {
     @include v.bg(3);
+    border: 1px solid nth(v.$colors, 1 );
   }
 }

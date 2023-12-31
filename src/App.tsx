@@ -1,5 +1,5 @@
 import Header from "./components/header/Header.tsx";
-import Body from "./components/body/gameBoard.tsx";
+import Body from "./components/body/GameBoard.tsx";
 import "./App.scss";
 
 const App = () => {

@@ -5,4 +5,5 @@
   flex-wrap: wrap;
   width: 233px;
   gap: 1px;
+  @include v.bg(1);
 }
